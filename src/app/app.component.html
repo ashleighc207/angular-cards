@@ -1,26 +1,11 @@
 <div class="main-container">
   <app-card
+    *ngFor="let post of posts"
     class="card"
-    [title]="posts[0].title"
-    [image]="posts[0].image"
-    [user]="posts[0].user"
-    [descr]="posts[0].descr"
-  >
-  </app-card>
-  <app-card
-    class="card"
-    [title]="posts[1].title"
-    [image]="posts[1].image"
-    [user]="posts[1].user"
-    [descr]="posts[1].descr"
-  >
-  </app-card>
-  <app-card
-    class="card"
-    [title]="posts[2].title"
-    [image]="posts[2].image"
-    [user]="posts[2].user"
-    [descr]="posts[2].descr"
+    [title]="post.title"
+    [image]="post.image"
+    [user]="post.user"
+    [descr]="post.descr"
   >
   </app-card>
 </div>
